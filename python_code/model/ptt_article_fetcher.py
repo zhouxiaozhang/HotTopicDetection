@@ -5,7 +5,7 @@ import re
 import sys
 import time
 
-
+#类对象
 class Article(object):
     """docstring for Article"""
 
@@ -135,5 +135,6 @@ def _fetch(args_url):
 def _parse_to_articles(json_data):
     articles = []
     for data in json.loads(json_data)['response']['docs']:
+        #类对象实例化
         articles.append((Article(data)))
     return articles
