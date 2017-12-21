@@ -8,7 +8,7 @@ import time
 #类对象
 class Article(object):
     """docstring for Article"""
-
+    #self 实例对象本身
     def __init__(self, arg):
         super(Article, self).__init__()
         self.push_score = 0
