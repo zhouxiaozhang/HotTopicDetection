@@ -27,6 +27,7 @@ class AgglomerativeClustering:
             cluster_b = most_closest_pair['target']
             if len(cluster_pair_list) % 200 == 0:
                 print(len(cluster_pair_list))
+            #传入的clusters 在内部改变，外部也改变？
             self._merge_clusters(cluster_a, cluster_b, cluster_pair_list, clusters)
             most_closest_pair = cluster_pair_list[0]
 
