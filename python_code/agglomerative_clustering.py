@@ -4,7 +4,8 @@ from numpy import dot, array, array_equal
 
 class AgglomerativeClustering:
     """docstring for AgglomerativeClustering"""
-
+#1.更新时计算中心点向量还是保留所有文档项链向量
+#2.计算两群相似度方法
     LINKAGE_CENTROID = 'centroid'
     LINKAGE_SINGLE = 'single'
     LINKAGE_COMPLETE = 'complete'
